@@ -1,192 +1,846 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
+<!doctype html>
+<html lang="en">
+
 <head>
+
+    <!--====== Required meta tags ======-->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Let's play</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="shortcut icon" href="dist/images/logo.png">
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>PI'Gamers</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <header class="site-header text-light">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-								<img class="header-logo-image" src="dist/images/logo.png" alt="Logo">
-                            </a>
-                        </h1>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <main>
-            <section class="hero text-center text-light">
-				<div class="hero-bg"></div>
-				<div class="hero-particles-container">
-					<canvas id="hero-particles"></canvas>
-				</div>
-                <div class="container-sm">
-                    <div class="hero-inner">
-						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Quand le virtuel défi le réel</h1>
-	                        <p class="hero-paragraph">Vous avez envie de vivre de votre passion pour les jeux vidéos ?<br>Vous êtes au bon endroit.</p>
-	                        <div class="hero-cta">
-								<a class="button button-primary button-wide-mobile" href="#features" >Découvir let's play</a>
-							</div>
-						</div>
-						<div class="mockup-container">
-							<div class="mockup-bg">
-								<img src="dist/images/iphone-hero-bg.svg" alt="iPhone illustration">
-							</div>
-							<img class="device-mockup" src="dist/images/HiShoot_20200901_002201.png" alt="iPhone Hero">
-						</div>
-                    </div>
-                </div>
-            </section>
-
-			<section class="features-extended section">
-                <div class="features-extended-inner section-inner">
-					<div class="features-extended-wrap">
-						<div class="container" id="features">
-							<div class="feature-extended">
-								<div class="feature-extended-image">
-									<div class="mockup-bg">
-										<img src="dist/images/iphone-feature-bg-01.svg" alt="iPhone Feature 01 illustration">
-									</div>
-									<img class="device-mockup is-revealing" src="dist/images/HiShoot_20201217_205848.png" alt="iPhone Feature 01">
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16 text-light">Votre réseau social.</h3>
-									<ul class="m-0 text-t">
-										<li>Faites vous des amis partout dans le monde</li>
-										<li>Envoyez et recevez des messages</li> 
-										<li>Créez des groupes pour discutez avec</li>
-									</ul>
-								</div>
-							</div>
-							<div class="feature-extended">
-								<div class="feature-extended-image">
-									<div class="mockup-bg">
-										<img src="dist/images/iphone-feature-bg-02.svg" alt="iPhone Feature 02 illustration">
-									</div>
-									<img class="device-mockup is-revealing" src="dist/images/HiShoot_20201217_205643.png" alt="iPhone Feature 02">
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16 text-light">Votre source de revenus</h3>
-									<p class="m-0 text-t">Faites vous de l'argent en pariant sur plusieurs évenements quotidiens. Terminez les missions et jouez pour gagnez des bullets, des coins ou même des diamonds !</p>
-								</div>
-							</div>
-							<div class="feature-extended">
-								<div class="feature-extended-image">
-									<div class="mockup-bg">
-										<img src="dist/images/iphone-feature-bg-03.svg" alt="iPhone Feature 03 illustration">
-									</div>
-									<img class="device-mockup is-revealing" src="dist/images/HiShoot_20201217_205926.png" alt="iPhone Feature 03">
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16 text-light">Streamez en temps réel</h3>
-									<p class="m-0 text-t">Avec notre espace de streaming, suivez en directs les évenement quotidiens et extras de let's play. Suivez aussi l'actualité gaming, tech et otaku.</p>
-								</div>
-							</div>
-							<div class="feature-extended">
-								<div class="feature-extended-image">
-									<div class="mockup-bg">
-										<img src="dist/images/iphone-feature-bg-04.svg" alt="iPhone Feature 04 illustration">
-									</div>
-									<img class="device-mockup is-revealing" src="dist/images/HiShoot_20200901_002201.png" alt="iPhone Feature 04">
-								</div>
-								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0 mb-16 text-light">Votre espace de pub.</h3>
-									<p class="m-0 text-t">Vous êtes commercant ou une entreprise ? Profitez de l'espace pub de notre fil d'actualité pour booster vos ventes.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-                </div>
-            </section>
-        </main>
-
-		<footer class="site-footer">
-			<div class="footer-particles-container">
-				<canvas id="footer-particles"></canvas>
-			</div>
-			<div class="site-footer-top">
-				<section class="cta section text-light">
-					<div class="container-sm">
-						<div class="cta-inner section-inner">
-							<div class="cta-header text-center">
-								<h2 class="section-title mt-0">Vous aimez let's play</h2>
-								<p class="section-paragraph">Ne perdez pas de temps !</p>
-								<div class="cta-cta">
-									<a class="button button-primary button-wide-mobile" href="#">Téléchargez maintenant</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="site-footer-bottom">
-				<div class="container">
-					<div class="site-footer-inner">
-						<div class="brand footer-brand">
-							<a href="#">
-								<img src="dist/images/logo.png" alt="Venus logo">
-							</a>
-						</div>
-						<ul class="footer-links list-reset">
-							<li>
-								<a href="#">Contact</a>
-							</li>
-							<li>
-								<a href="#">About us</a>
-							</li>
-							<li>
-								<a href="#">FAQ's</a>
-							</li>
-							<li>
-								<a href="#">Support</a>
-							</li>
-						</ul>
-						<ul class="footer-social-links list-reset">
-							<li>
-								<a href="https://m.facebook.com/LetsPlay4.16/?ref=bookmarks">
-									<span class="screen-reader-text">Facebook</span>
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="screen-reader-text">Twitter</span>
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="https://instagram.com/lets_play4.16?igshid=1lvnfwm2at49c">
-									<span class="screen-reader-text">Instagram</span>
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" fill="#FFF"/>
-									</svg>
-								</a>
-							</li>
-						</ul>
-						<div class="footer-copyright">&copy; 2020 Let's play, all rights reserved</div>
-					</div>
-				</div>
-			</div>
-        </footer>
+        </div>
     </div>
 
-    <script src="dist/js/main.min.js"></script>
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a> <!-- Logo -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="#home">Accueil</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#about">A propos</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#service">Nos services</a></li>
+                                    <!--<li class="nav-item"><a class="page-scroll" href="#work">Portfolio</a></li>-->
+                                    <li class="nav-item"><a class="page-scroll" href="#blog">Blog</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation -->
+
+        <div id="parallax" class="header-content d-flex align-items-center">
+            <div class="header-shape shape-one layer" data-depth="0.10">
+                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-tow layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-three layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-fore layer" data-depth="0.60">
+                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-five layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-six layer" data-depth="0.15">
+                <img src="assets/images/banner/shape/shape-4.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-seven layer" data-depth="0.50">
+                <img src="assets/images/banner/shape/shape-5.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-eight layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-nine layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/shape-6.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-ten layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="header-content-right">
+                            <h4 class="sub-title">Bienvenue à</h4>
+                            <h1 class="title"> PI'Gamers</h1>
+                            <p>Game | Fun | Chill</p>
+                            <a class="main-btn" href="#work">C'est parti !</a>
+                        </div> <!-- header content right -->
+                    </div>
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="header-image d-none d-lg-block">
+                            <img src="assets/images/banner/hero.png" alt="hero">
+                        </div> <!-- header image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-social-icon">
+                                <ul>
+                                    <li><a href="https://instagram.com/pigamers_?igshid=sd3uxc62i125"><i class="lni-instagram-original"></i></a></li>
+                                    <li><a href="https://www.facebook.com/PiGamers-103191205196895/"><i class="lni-facebook-filled"></i></a></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=22990347744&text=Hello%20je%20viens%20de%20la%20pour%20plus%20d'informations%20sur%20Pi'Gamers"><i class="lni-whatsapp"></i></a></li>
+                                    <li><a href="Pigamersteam5@gmail.com"><i class="lni-envelope"></i></a></li>
+                                </ul>
+                            </div> <!-- header social -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header social -->
+        </div> <!-- header content -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">A propos </h2>
+                        <p>Viens rejoindre des dizaines et des dizaines de Pi'Gamers, participe aux lives réguliers et réponds aux questions sur des sujets aussi riches que variés. À la clé, des cadeaux, des gadgets et une belle cagnotte a chaque session.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-content mt-50">
+                        <h5 class="about-title">Le meilleur moment pour jouer, c'est maintenant</h5>
+                        <p>Des lives sur facebook et instagram au moins trois fois par semaine. Abonne toi pour ne jamais être à la traîne</p>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-calendar"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Calendrier :</span> Mardi | Vendredi | Dimanche</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-envelope"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Email:</span>Pigamersteam5@gmail.com</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-phone-handset"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Phone:</span> +22990347744</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-map-marker"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Adresse:</span> Cotonou, Benin</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                        </ul>
+                    </div> <!-- about content -->
+                </div>
+              <!--  <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="about-skills pt-25">
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">HTML</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">80</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>--> <!-- skill item
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">CSS</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">60</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="60"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- skill item
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Photoshop</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">50</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="50"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                         <!-- skill item
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Sketch</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">90</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div> --> <!-- skill item -->
+                    </div> <!-- about skills -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== SERVICES PART START ======-->
+
+    <section id="service" class="services-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">Nos services </h2>
+                        <p>Pi'Gamers, ce n'est pas que du jeu. C'est tout un système de divertissement lucratif.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-code-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Un site web</a></h4>
+                            <p>Pour un accès plus facile aux informations relatives à Pi'Gamers.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-color-pallet"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#contact">Un beau design</a></h4>
+                            <p>Un environnement qui respecte l'ergonomie et facilite la navigation.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-mobile"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Une application mobile</a></h4>
+                            <p>Déjà disponible sur le Google play store et bientôt sur l'App store.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-popup"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Pi'News</a></h4>
+                            <p>Des actualités, des trending apps, et même de la culture Otaku.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-website"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Pi'Ads</a></h4>
+                            <p>vous pouvez même faire la promotion de vos articles, de votre activité et toucher un bon public.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-support"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Assistance et support</a></h4>
+                            <p>Contactez nous par mail, message, WhatsApp ou directement sur nos réseaux sociaux pour une assistance rapidement.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== CALL TO ACTION PART START ======-->
+
+   <!-- <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(assets/images/call-to-action.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="call-action-content text-center">
+                        <h2 class="action-title">Have any project on mind?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostrud.</p>
+                        <ul>
+                            <li><a class="main-btn custom" href="#">download cv</a></li>
+                            <li><a class="main-btn custom-2" href="#">hire me</a></li>
+                        </ul>
+                    </div> <!-d-call action content -d->
+                </div>
+            </div> <!d-- row -d->
+        </div> <!-d- container -d->
+    </section>-->
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+    <!--====== WORK PART START ======
+
+    <section id="work" class="work-area pt-125 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title pb-25">
+                        <h2 class="title">My Recent Works</h2>
+                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                    </div> <!-d- section title --d>
+                </div>
+            </div> <!-d- row -d->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="assets/images/work/w-1.jpg" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Product Design</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="assets/images/work/w-1.jpg"><i class="lni-plus"></i></a></li>
+                                    <li><a href="#"><i class="lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-d- single work -d->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="assets/images/work/w-2.jpg" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Product Design</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="assets/images/work/w-2.jpg"><i class="lni-plus"></i></a></li>
+                                    <li><a href="#"><i class="lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-d- single work -d->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="assets/images/work/w-3.jpg" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Product Design</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="assets/images/work/w-3.jpg"><i class="lni-plus"></i></a></li>
+                                    <li><a href="#"><i class="lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-d- single work -d->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="assets/images/work/w-4.jpg" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Product Design</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="assets/images/work/w-4.jpg"><i class="lni-plus"></i></a></li>
+                                    <li><a href="#"><i class="lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-d- single work -d->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="assets/images/work/w-5.jpg" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Product Design</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="assets/images/work/w-5.jpg"><i class="lni-plus"></i></a></li>
+                                    <li><a href="#"><i class="lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-d- single work -d->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="assets/images/work/w-6.jpg" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Product Design</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="assets/images/work/w-6.jpg"><i class="lni-plus"></i></a></li>
+                                    <li><a href="#"><i class="lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-d- single work --d>
+                </div>
+            </div> <!-d- row -d->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="work-more text-center mt-50">
+                        <a class="main-btn" href="#">more works</a>
+                    </div> <!-d- work more -d->
+                </div>
+            </div> <!d-- row -d->
+        </div> d container --d>
+    </section>
+
+    <!d--====== WORK PART ENDS ======-->
+
+    <!--====== PRICING PART START ======-d->
+
+    <section id="pricing" class="pricing-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">My Pricing Plans</h2>
+                        <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p>
+                    </div> <!-d- section title -d->
+                </div>
+            </div> <!d-- row -d->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-pricing text-center mt-30">
+                        <div class="pricing-package">
+                            <h4 class="package-title">Basic</h4>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-text">
+                                <p>Simple project management for teams and small businesses.</p>
+                                <span class="price">$19.00</span>
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    <li>Unlimited Tasks</li>
+                                    <li>Unlimited Public</li>
+                                    <li>Private Projects</li>
+                                    <li>Unlimited Teams</li>
+                                    <li>All Integrations</li>
+                                    <li>Public API</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-btn">
+                                <a class="main-btn" href="#contact">get quote</a>
+                            </div>
+                        </div>
+                    </div> <!d-- single pricing -d->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-pricing active text-center mt-30">
+                        <div class="pricing-package">
+                            <h4 class="package-title">Standard</h4>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-text">
+                                <p>Simple project management for teams and small businesses.</p>
+                                <span class="price">$39.00</span>
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    <li>Unlimited Tasks</li>
+                                    <li>Unlimited Public</li>
+                                    <li>Private Projects</li>
+                                    <li>Unlimited Teams</li>
+                                    <li>All Integrations</li>
+                                    <li>Public API</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-btn">
+                                <a class="main-btn" href="#contact">get quote</a>
+                            </div>
+                        </div>
+                    </div> <!-d- single pricing d->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-pricing text-center mt-30">
+                        <div class="pricing-package">
+                            <h4 class="package-title">Premium</h4>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="pricing-text">
+                                <p>Simple project management for teams and small businesses.</p>
+                                <span class="price">$29.00</span>
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    <li>Unlimited Tasks</li>
+                                    <li>Unlimited Public</li>
+                                    <li>Private Projects</li>
+                                    <li>Unlimited Teams</li>
+                                    <li>All Integrations</li>
+                                    <li>Public API</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-btn">
+                                <a class="main-btn" href="#contact">get quote</a>
+                            </div>
+                        </div>
+                    </div> <!-d- single pricing -d->
+                </div>
+            </div> <!-d- row -d->
+        </div> <!-d- container -d->
+    </section>
+
+    <!-d-====== PRICING PART ENDS ======-->
+
+    <!--====== BLOG PART START ======-->
+
+    <section id="blog" class="blog-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Notre Blog</h2>
+                        <h4>Aucun article disponible.</h4>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row --d>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="assets/images/blog/b-1.jpg" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="#">Hired Releases 2023 Brand Health.</a></h4>
+                            <span>July 26, 2022</span>
+                        </div>
+                    </div> <!-d- single blog -d->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="assets/images/blog/b-2.jpg" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="#">Hired Releases 2023 Brand Health.</a></h4>
+                            <span>July 26, 2022</span>
+                        </div>
+                    </div> <!-d- single blog -d->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="assets/images/blog/b-3.jpg" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="#">Hired Releases 2023 Brand Health.</a></h4>
+                            <span>July 26, 2022</span>
+                        </div>
+                    </div> <!-d- single blog --d>
+                </div>
+            </div> <!d-- row -d->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-more text-center mt-50">
+                        <a class="main-btn" href="#">More posts</a>
+                    </div> <!-d- blog more -d->
+                </div>-->
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== BLOG PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Contactez nous</h2>
+                        <p>Contactez nous par mail, message, WhatsApp ou directement sur nos réseaux sociaux pour une assistance rapide.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-map-marker"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Adresse</h6>
+                            <p>Cotonou, Benin</p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Téléphone</h6>
+                            <p>+229 903 477 44</p>
+                            
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Email</h6>
+                            <p>Pigamersteam5@gmail.com</p>
+                            
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form pt-30">
+                        <form id="contact-form" action="assets/contact.php">
+                            <div class="single-form">
+                                <input type="text" name="name" placeholder="Nom">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <input type="email" name="email" placeholder="Email">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div> <!-- single form -->
+                            <p class="form-message"></p>
+                            <div class="single-form">
+                                <button class="main-btn" type="submit">Envoyez</button>
+                            </div> <!-- single form -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map mt-60">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div> <!-- contact map -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-widget pt-130 pb-130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-content text-center">
+                            <a href="index.html">
+                                <img src="assets/images/logo-2.png" alt="Logo">
+                            </a>
+                            <p class="mt-">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <ul>
+                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                                <li><a href="#"><i class="lni-pinterest"></i></a></li>
+                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div> <!-- footer content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="footer-copyright pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center pt-20">
+                            <p>Copyright © 2022. Template Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                        </div> <!-- copyright text -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+
+    <!--====== Appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
